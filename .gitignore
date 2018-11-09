@@ -1,3 +1,9 @@
+# Bundles
+dist/
+
+# Development files
+config/development.json
+
 # Logs
 logs
 *.log

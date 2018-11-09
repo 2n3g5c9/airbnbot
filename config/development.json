@@ -1,0 +1,9 @@
+{
+  "slack": {
+    "fileUploadUrl": "https://slack.com/api/files.upload",
+    "reporterBot": {
+        "fileUploadChannel": "#airbnbot_files",
+        "botToken": "xoxb-473580467142-476303901061-7Ncb43dANwaCAjpcnIIUinBL"
+    }
+  }
+}
