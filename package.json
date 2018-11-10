@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@types/express": "^4.16.0",
+    "@types/request": "^2.48.1",
     "eslint": "^5.8.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
@@ -28,12 +29,8 @@
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "config": "^2.0.1",
-    "csv-write-stream": "^2.0.0",
+    "dotenv": "^6.1.0",
     "express": "^4.16.4",
-    "mkdirp": "^0.5.1",
-    "morgan": "^1.9.1",
-    "tracer": "^0.9.4"
+    "request": "^2.88.0"
   }
 }

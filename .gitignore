@@ -1,8 +1,8 @@
 # Bundles
 dist/
 
-# Development files
-config/development.json
+# MacOS files
+.DS_Store
 
 # Logs
 logs
