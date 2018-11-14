@@ -103,11 +103,7 @@ export const homesAttachments = (listings: any, dates: string[]) => {
 
   // If there is no rare home, let's consider every homes
   if (homes.length === 0) {
-    homes = listings.sort((a: any, b: any) => {
-      return (
-        a.pricing_quote.price.total.amount - b.pricing_quote.price.total.amount
-      )
-    })
+    homes = listings
   }
 
   homes = homes
