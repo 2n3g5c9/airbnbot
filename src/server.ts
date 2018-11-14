@@ -51,7 +51,7 @@ app.post('/london', (req, res) => {
   if (req.body.text === 'help') {
     res.json(
       messages.helpAttachment(
-        'Simply write something like `/london 2018-12-25 2018-12-31`.'
+        'Simply write something like: `/london 2018-12-25 2018-12-31`.'
       )
     )
   } else {
