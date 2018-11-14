@@ -49,7 +49,7 @@ app.post('/london', (req, res) => {
   if (dates && dates.length === 2) {
     request.get(
       'https://www.airbnb.com/api/v2/explore_tabs?' +
-        'items_per_grid=18' +
+        'items_per_grid=180' +
         '&timezone_offset=60' +
         `&client_session_id=${process.env.AIRBNB_CLIENT_SESSION_ID}` +
         '&selected_tab_id=home_tab' +
@@ -72,8 +72,8 @@ app.post('/london', (req, res) => {
           try {
             res.json(
               messages.homesAttachments(
-                dates,
-                JSON.parse(body).explore_tabs[0].sections[1].listings
+                JSON.parse(body).explore_tabs[0].sections[1].listings,
+                dates
               )
             )
           } catch (e) {

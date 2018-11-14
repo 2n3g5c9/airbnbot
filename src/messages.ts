@@ -18,10 +18,12 @@ const fromListingToAttachment = (listing: any, dates: string[]) => {
     title: listing.listing.name,
     title_link: `https://www.airbnb.fr/rooms/${
       listing.listing.id
-    }?location=Londres%2C Royaume Uni&adults=2&children=0&infants=0&guests=2&toddlers=0&check_in=${
+    }?adults=2&children=0&infants=0&guests=2&toddlers=0&check_in=${
       dates[0]
     }&check_out=${dates[1]}`,
-    text: `_${listing.listing.neighborhood}, ${listing.listing.city}_`,
+    text: listing.listing.neighborhood
+      ? `_${listing.listing.neighborhood}, ${listing.listing.city}_`
+      : `_${listing.listing.city}_`,
     thumb_url: listing.listing.picture.picture,
     fields: [
       {
@@ -38,17 +40,21 @@ const fromListingToAttachment = (listing: any, dates: string[]) => {
   }
 }
 
-export const homesAttachments = (dates: string[], listings: any) => {
-  const homes = listings
+export const homesAttachments = (listings: any, dates: string[]) => {
+  const homes: any = listings
+    .filter((listing: any) => {
+      return listing.listing.badges.includes('PERLE RARE')
+    })
     .sort((a: any, b: any) => {
-      if (a.pricing_quote.total.amount < b.pricing_quote.total.amount) return -1
-      else if (a.pricing_quote.total.amount > b.pricing_quote.total.amount)
-        return 1
-      return 0
+      return (
+        a.pricing_quote.price.total.amount - b.pricing_quote.price.total.amount
+      )
     })
     .slice(0, 5)
 
   return {
-    attachments: homes.map(fromListingToAttachment, dates),
+    attachments: homes.map((listing: any) =>
+      fromListingToAttachment(listing, dates)
+    ),
   }
 }
