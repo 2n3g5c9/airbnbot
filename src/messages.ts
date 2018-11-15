@@ -65,7 +65,9 @@ export const waitingAttachment = (text: string) => {
 const fromListingToAttachment = (listing: any, dates: string[]) => {
   return {
     color: 'good',
-    title: listing.listing.name,
+    title: listing.listing.badges.includes('PERLE RARE')
+      ? `${listing.listing.name} :gem:`
+      : `${listing.listing.name}`,
     title_link: `https://www.airbnb.fr/rooms/${
       listing.listing.id
     }?adults=2&children=0&infants=0&guests=2&toddlers=0&check_in=${
