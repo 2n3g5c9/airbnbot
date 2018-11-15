@@ -3,7 +3,6 @@ jobs:
   build:
     environment:
       CC_TEST_REPORTER_ID: 03d2429c4932994bb7a46ac30677c9348186a4c2780049022bada3c0e14e39a4
-      NODE_ENV: production
     docker:
       - image: circleci/node:latest
     working_directory: ~/repo
