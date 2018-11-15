@@ -10,7 +10,7 @@
     "build": "webpack --config webpack.prod.js",
     "watch": "webpack --config webpack.dev.js --watch",
     "lint": "eslint src/**",
-    "test": "jest test"
+    "test": "jest test --coverage"
   },
   "devDependencies": {
     "@types/express": "^4.16.0",
