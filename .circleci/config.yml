@@ -21,8 +21,8 @@ jobs:
             curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
             chmod +x ./cc-test-reporter
       - run:
-        name: Run linting tests
-        command: yarn lint
+          name: Run linting tests
+          command: yarn lint
       - run:
           name: Run tests
           command: |
