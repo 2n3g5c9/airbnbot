@@ -74,7 +74,7 @@ app.post('/london', (req, res) => {
     if (dates && dates.length === 2) {
       request.get(
         'https://www.airbnb.com/api/v2/explore_tabs?' +
-          'items_per_grid=3600' +
+          'items_per_grid=1800' +
           '&timezone_offset=60' +
           `&client_session_id=${process.env.AIRBNB_CLIENT_SESSION_ID}` +
           '&selected_tab_id=home_tab' +
