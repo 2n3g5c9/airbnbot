@@ -1,5 +1,6 @@
 /**
  * @description wrapper for writing error attachments
+ * @param commandName name of the command to show some help about
  * @param text text to show the user when an error occurs with Airbnbot
  * @returns an attachments list following Slack's guidelines
  */
