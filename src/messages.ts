@@ -3,10 +3,10 @@
  * @param text text to show the user when an error occurs with Airbnbot
  * @returns an attachments list following Slack's guidelines
  */
-export const helpAttachment = (text: string) => {
+export const helpAttachment = (commandName: string, text: string) => {
   return {
     response_type: 'ephemeral',
-    text: 'How to use `/london`:',
+    text: `How to use \`/${commandName}\`:`,
     attachments: [
       {
         color: '#764FA5',

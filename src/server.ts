@@ -13,10 +13,6 @@ app.listen(PORT, () => {
   console.log(`Airbnbot listening on port ${PORT}!`)
 })
 
-app.get('/', (req, res) => {
-  res.send(`Ngrok is working! Path Hit: ${req.url}`)
-})
-
 app.get('/oauth', (req, res) => {
   if (!req.query.code) {
     res.status(500)
@@ -51,6 +47,7 @@ app.post('/london', (req, res) => {
   if (req.body.text === 'help') {
     res.json(
       messages.helpAttachment(
+        'london',
         'Simply write something like: `/london 2018-12-25 2018-12-31`.'
       )
     )

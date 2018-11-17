@@ -45,6 +45,10 @@ And run it in the background:
 ./airbnbot-run.sh
 ```
 
+### How to use
+
+Simply send `/london help` to your Slack bot to get instructions on how to use the command. Keep in mind this works for bookings in London but feel free to customize!
+
 ## Tech/frameworks used
 
 - [NodeJS](https://nodejs.org/): JavaScript runtime built on Chrome's V8 JavaScript engine.
