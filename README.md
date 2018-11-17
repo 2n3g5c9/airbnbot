@@ -9,7 +9,7 @@ Slack app to fetch deals from Airbnb's API. (JS version)
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
@@ -21,6 +21,16 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/2n3g5c9/airbnbot-js
+```
+
+Write a `.env` file with the following environment variables:
+
+```bash
+CLIENT_ID=""
+CLIENT_SECRET=""
+AIRBNBOT_ICON_URL=""
+AIRBNB_CLIENT_SESSION_ID=""
+AIRBNB_KEY=""
 ```
 
 Then simply build the image (less than 80MB) with the provided build script:
