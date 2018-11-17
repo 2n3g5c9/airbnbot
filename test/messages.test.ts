@@ -1,9 +1,9 @@
 import * as messages from '../src/messages'
 
 test('generation of the help message', () => {
-  expect(messages.helpAttachment('Some test help message.')).toEqual({
+  expect(messages.helpAttachment('city', 'Some test help message.')).toEqual({
     response_type: 'ephemeral',
-    text: 'How to use `/london`:',
+    text: 'How to use `/city`:',
     attachments: [
       {
         color: '#764FA5',
