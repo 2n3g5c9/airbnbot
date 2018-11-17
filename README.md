@@ -1,4 +1,4 @@
-# airbnbot-js
+![airbnbot-js](https://raw.githubusercontent.com/2n3g5c9/airbnbot-js/master/img/airbnbot_banner.png)
 
 [![CircleCI](https://circleci.com/gh/2n3g5c9/airbnbot-js/tree/master.svg?style=svg)](https://circleci.com/gh/2n3g5c9/airbnbot-js/tree/master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/71be31ee9871a217f2f5/maintainability)](https://codeclimate.com/github/2n3g5c9/airbnbot-js/maintainability)
