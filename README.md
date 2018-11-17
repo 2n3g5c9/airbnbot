@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center" style="margin-bottom: 1em;">
 	<div>
 		<img width="512" src="https://raw.githubusercontent.com/2n3g5c9/airbnbot-js/master/img/airbnbot_banner.png" alt="airbnbot-js">
 	</div>
