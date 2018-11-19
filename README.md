@@ -1,8 +1,10 @@
-<img width="512" src="https://raw.githubusercontent.com/2n3g5c9/airbnbot-js/master/img/airbnbot_banner.png" alt="airbnbot-js" align="center" />
+<div align="center">
+  <img width="512" src="https://raw.githubusercontent.com/2n3g5c9/airbnbot-js/master/img/airbnbot_banner.png" alt="airbnbot-js">
+</div>
 
 <br />
 
-<div align="center">Slack app to fetch deals from the hidden Airbnb's API (JS version)</div>
+<div align="center"></div>
 
 <br />
 
