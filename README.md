@@ -4,7 +4,7 @@
 
 <br />
 
-<div align="center"></div>
+<div align="center">Slack app to fetch deals from the hidden Airbnb's API (JS version)</div>
 
 <br />
 
