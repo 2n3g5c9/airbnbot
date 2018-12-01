@@ -23,7 +23,7 @@
     "eslint-plugin-jest": "^22.1.0",
     "eslint-plugin-prettier": "^3.0.0",
     "jest": "^23.6.0",
-    "prettier": "^1.15.2",
+    "prettier": "^1.15.3",
     "ts-jest": "^23.10.5",
     "ts-loader": "^5.3.1",
     "typescript": "^3.2.1",
