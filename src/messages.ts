@@ -14,8 +14,8 @@ export const helpAttachment = (commandName: string, text: string) => {
         text: text,
       },
     ],
-  }
-}
+  };
+};
 
 /**
  * @description wrapper for writing error attachments
@@ -34,8 +34,8 @@ export const errorAttachment = (text: string) => {
         ts: new Date().getTime() / 1000,
       },
     ],
-  }
-}
+  };
+};
 
 /**
  * @description wrapper for writing waiting attachments
@@ -54,8 +54,8 @@ export const waitingAttachment = (text: string) => {
         ts: new Date().getTime() / 1000,
       },
     ],
-  }
-}
+  };
+};
 
 /**
  * @description turns a listing into an attachment to display on Slack
@@ -90,8 +90,8 @@ const fromListingToAttachment = (listing: any, dates: string[]) => {
         short: true,
       },
     ],
-  }
-}
+  };
+};
 
 /**
  * @description turns listings into attachments to display on Slack
@@ -101,25 +101,25 @@ const fromListingToAttachment = (listing: any, dates: string[]) => {
  */
 export const homesAttachments = (listings: any, dates: string[]) => {
   let homes: any = listings.filter((listing: any) => {
-    return listing.listing.badges.includes('PERLE RARE')
-  })
+    return listing.listing.badges.includes('PERLE RARE');
+  });
 
   // If there is no rare home, let's consider every homes
   if (homes.length === 0) {
-    homes = listings
+    homes = listings;
   }
 
   homes = homes
     .sort((a: any, b: any) => {
       return (
         a.pricing_quote.price.total.amount - b.pricing_quote.price.total.amount
-      )
+      );
     })
-    .slice(0, 5)
+    .slice(0, 5);
 
   return {
     attachments: homes.map((listing: any) =>
       fromListingToAttachment(listing, dates)
     ),
-  }
-}
+  };
+};

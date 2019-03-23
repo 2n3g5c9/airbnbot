@@ -1,23 +1,23 @@
-import express from 'express'
-import morgan from 'morgan'
-import request from 'request'
-import * as messages from './messages'
+import express from 'express';
+import morgan from 'morgan';
+import request from 'request';
+import * as messages from './messages';
 
-const app: express.Application = express()
-const PORT: number = 3000
+const app = express();
+const PORT = 3000;
 
-app.use(express.urlencoded({ extended: true }))
-app.use(morgan('combined'))
+app.use(express.urlencoded({ extended: true }));
+app.use(morgan('combined'));
 
 app.listen(PORT, () => {
-  console.log(`Airbnbot listening on port ${PORT}!`)
-})
+  console.log(`Airbnbot listening on port ${PORT}!`);
+});
 
 app.get('/oauth', (req, res) => {
   if (!req.query.code) {
-    res.status(500)
-    res.send({ Error: "Looks like we're not getting code." })
-    console.log("Looks like we're not getting code.")
+    res.status(500);
+    res.send({ Error: "Looks like we're not getting code." });
+    console.log("Looks like we're not getting code.");
   } else {
     request(
       {
@@ -31,16 +31,16 @@ app.get('/oauth', (req, res) => {
       },
       (error, response, body) => {
         if (error) {
-          console.log(error)
+          console.log(error);
         } else {
-          res.json(body)
+          res.json(body);
         }
       }
-    )
+    );
   }
-})
+});
 
-const dateRegex: RegExp = /\d{4}-\d{2}-\d{2}/g
+const dateRegex = /\d{4}-\d{2}-\d{2}/g;
 
 app.post('/london', (req, res) => {
   // Handling of the lost user
@@ -50,23 +50,23 @@ app.post('/london', (req, res) => {
         'london',
         'Simply write something like: `/london 2018-12-25 2018-12-31`.'
       )
-    )
+    );
   } else {
     // Immediate response to tell the user the backend is processing
     res.json(
       messages.waitingAttachment(
         'Fetching and filtering the results... :watch:'
       )
-    )
+    );
 
     // Preparation for the delayed response
     let options: { uri: string; json: boolean; body: any } = {
       uri: req.body.response_url,
       json: true,
       body: {},
-    }
+    };
 
-    const dates: string[] = req.body.text.match(dateRegex)
+    const dates = req.body.text.match(dateRegex);
 
     if (dates && dates.length === 2) {
       request.get(
@@ -89,22 +89,22 @@ app.post('/london', (req, res) => {
           '&locale=fr',
         (error, response, body) => {
           if (error) {
-            options.body = messages.errorAttachment(error)
+            options.body = messages.errorAttachment(error);
           } else {
             try {
               options.body = messages.homesAttachments(
                 JSON.parse(body).explore_tabs[0].sections[1].listings,
                 dates
-              )
+              );
             } catch (e) {
               options.body = messages.errorAttachment(
                 "Airbnb doesn't want to serve the results... :cry: try again later."
-              )
+              );
             }
-            request.post(options)
+            request.post(options);
           }
         }
-      )
+      );
     }
   }
-})
+});

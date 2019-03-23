@@ -1,4 +1,4 @@
-import * as messages from '../src/messages'
+import * as messages from '../src/messages';
 
 test('generation of the help message', () => {
   expect(messages.helpAttachment('city', 'Some test help message.')).toEqual({
@@ -10,46 +10,46 @@ test('generation of the help message', () => {
         text: 'Some test help message.',
       },
     ],
-  })
-})
+  });
+});
 
 test('generation of an error message', () => {
   const message: {
-    color: string
-    pretext: string
-    text: string
-    footer: string
-    footer_icon: string | undefined
-    ts: number
-  } = messages.errorAttachment('Some test error message.').attachments[0]
-  delete message.footer_icon
-  delete message.ts
+    color: string;
+    pretext: string;
+    text: string;
+    footer: string;
+    footer_icon: string | undefined;
+    ts: number;
+  } = messages.errorAttachment('Some test error message.').attachments[0];
+  delete message.footer_icon;
+  delete message.ts;
   expect(message).toEqual({
     color: 'danger',
     pretext: 'An error occured with Airbnbot:',
     text: 'Some test error message.',
     footer: 'Airbnbot',
-  })
-})
+  });
+});
 
 test('generation of a waiting message', () => {
   const message: {
-    color: string
-    pretext: string
-    text: string
-    footer: string
-    footer_icon: string | undefined
-    ts: number
-  } = messages.waitingAttachment('Some test waiting message.').attachments[0]
-  delete message.footer_icon
-  delete message.ts
+    color: string;
+    pretext: string;
+    text: string;
+    footer: string;
+    footer_icon: string | undefined;
+    ts: number;
+  } = messages.waitingAttachment('Some test waiting message.').attachments[0];
+  delete message.footer_icon;
+  delete message.ts;
   expect(message).toEqual({
     color: 'warning',
     pretext: 'Your request has been received:',
     text: 'Some test waiting message.',
     footer: 'Airbnbot',
-  })
-})
+  });
+});
 
 test('generation of homes attachments', () => {
   const listings: any = [
@@ -115,8 +115,8 @@ test('generation of homes attachments', () => {
         },
       },
     },
-  ]
-  const dates: string[] = ['2018-12-28', '2018-12-31']
+  ];
+  const dates: string[] = ['2018-12-28', '2018-12-31'];
   // Testing when there are 'PERLE RARE'
   expect(messages.homesAttachments(listings, dates)).toEqual({
     attachments: [
@@ -166,7 +166,7 @@ test('generation of homes attachments', () => {
     expect(
       messages.homesAttachments(
         listings.filter((listing: any) => {
-          return !listing.listing.badges.includes('PERLE RARE')
+          return !listing.listing.badges.includes('PERLE RARE');
         }),
         dates
       )
@@ -193,5 +193,5 @@ test('generation of homes attachments', () => {
           ],
         },
       ],
-    })
-})
+    });
+});
