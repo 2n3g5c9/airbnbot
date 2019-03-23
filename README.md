@@ -53,16 +53,10 @@ AIRBNB_CLIENT_SESSION_ID=""
 AIRBNB_KEY=""
 ```
 
-Then simply build the image (less than 80MB) with the provided build script:
+Then simply build the image (less than 80MB) and run a container in the background with the provided `docker-compose` configuration file:
 
 ```bash
-./airbnbot-build.sh
-```
-
-And run it in the background:
-
-```bash
-./airbnbot-run.sh
+docker-compose up -d
 ```
 
 ### How to use

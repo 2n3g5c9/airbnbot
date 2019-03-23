@@ -1,5 +1,5 @@
 module.exports = {
-  parser: 'typescript-eslint-parser',
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 7,
     sourceType: 'module',
@@ -14,4 +14,4 @@ module.exports = {
     'no-console': 0,
     'prettier/prettier': 'error',
   },
-}
+};
