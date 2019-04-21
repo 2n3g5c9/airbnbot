@@ -63,6 +63,11 @@ docker-compose up -d
 
 Simply send `/london help` to your Slack bot to get instructions on how to use the command. Keep in mind this works for bookings in London but feel free to customize!
 
+*Following is an example on how to use Airbnbot:*
+<div align="center">
+  <img width="650" src="https://raw.githubusercontent.com/2n3g5c9/airbnbot-js/master/img/airbnbot_screenshot.png" alt="airbnbot-screenshot">
+</div>
+
 ## Tech/frameworks used
 
 - [NodeJS](https://nodejs.org/): JavaScript runtime built on Chrome's V8 JavaScript engine.
