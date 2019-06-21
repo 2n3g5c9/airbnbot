@@ -25,6 +25,10 @@
   <a href="https://depfu.com/github/2n3g5c9/airbnbot-js?project_id=6320">
     <img src="https://badges.depfu.com/badges/912fd5dddb23353385862ae6e5e1a888/overview.svg" alt="Test Coverage Status" />
   </a>
+  <!-- FOSSA Status -->
+  <a href="https://app.fossa.io/projects/git%2Bgithub.com%2F2n3g5c9%2Fairbnbot-js?ref=badge_shield">
+    <img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2F2n3g5c9%2Fairbnbot-js.svg?type=shield" alt="FOSSA Status" />
+  </a>
 </div>
 
 ## Getting Started
