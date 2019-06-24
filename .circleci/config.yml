@@ -24,7 +24,7 @@ jobs:
             chmod +x ./cc-test-reporter
       - run:
           name: Run linting tests
-          command: yarn lint
+          command: yarn lint --fix
       - run:
           name: Run tests
           command: |
