@@ -25,11 +25,13 @@
   <a href="https://depfu.com/github/2n3g5c9/airbnbot-js?project_id=6320">
     <img src="https://badges.depfu.com/badges/912fd5dddb23353385862ae6e5e1a888/overview.svg" alt="Test Coverage Status" />
   </a>
+  <!-- FOSSA Status -->
+  <a href="https://app.fossa.io/projects/git%2Bgithub.com%2F2n3g5c9%2Fairbnbot-js?ref=badge_shield">
+    <img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2F2n3g5c9%2Fairbnbot-js.svg?type=shield" alt="FOSSA Status" />
+  </a>
 </div>
 
 ## Getting Started
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2F2n3g5c9%2Fairbnbot-js.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2F2n3g5c9%2Fairbnbot-js?ref=badge_shield)
-
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
@@ -82,5 +84,9 @@ Simply send `/london help` to your Slack bot to get instructions on how to use t
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2F2n3g5c9%2Fairbnbot-js.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2F2n3g5c9%2Fairbnbot-js?ref=badge_large)
+<div align="center">
+  <!-- Build Status -->
+  <a href="https://app.fossa.io/projects/git%2Bgithub.com%2F2n3g5c9%2Fairbnbot-js?ref=badge_larger">
+    <img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2F2n3g5c9%2Fairbnbot-js.svg?type=large" alt="FOSSA Status" />
+  </a>
+</div>
