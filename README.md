@@ -84,7 +84,7 @@ Simply send `/london help` to your Slack bot to get instructions on how to use t
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
-<div align="center">
+<div align="right">
   <!-- Build Status -->
   <a href="https://app.fossa.io/projects/git%2Bgithub.com%2F2n3g5c9%2Fairbnbot-js?ref=badge_larger">
     <img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2F2n3g5c9%2Fairbnbot-js.svg?type=large" alt="FOSSA Status" />
