@@ -74,7 +74,7 @@ Simply send `/london help` to your Slack bot to get instructions on how to use t
 
 ## Tech/frameworks used
 
-- [NodeJS](https://nodejs.org/): JavaScript runtime built on Chrome's V8 JavaScript engine.
+- [Node.js](https://nodejs.org/): JavaScript runtime built on Chrome's V8 JavaScript engine.
 - [Typescript](https://www.typescriptlang.org/): Typed superset of JavaScript that compiles to plain JavaScript.
 - [Express](https://expressjs.com/): Fast, unopinionated, minimalist web framework for Node.js.
 - [Webpack](https://webpack.js.org/): Bundler for javascript and friends.
