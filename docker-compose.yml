@@ -1,8 +1,8 @@
 version: "3"
 services:
-  airbnbot-js:
+  airbnbot:
     build: .
-    image: airbnbot-js
+    image: airbnbot
     ports:
       - 3000:3000
-    container_name: airbnbot-js
+    container_name: airbnbot

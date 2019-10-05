@@ -1,33 +1,33 @@
 <div align="center">
-  <img width="512" src="https://raw.githubusercontent.com/2n3g5c9/airbnbot-js/master/img/airbnbot_banner.png" alt="airbnbot-js">
+  <img width="512" src="https://raw.githubusercontent.com/2n3g5c9/airbnbot/master/img/airbnbot_banner.png" alt="airbnbot">
 </div>
 
 <br />
 
-<div align="center">Slack app to fetch deals from the hidden Airbnb API (JS version)</div>
+<div align="center">Slack app to fetch deals from the hidden Airbnb API</div>
 
 <br />
 
 <div align="center">
   <!-- Build Status -->
-  <a href="https://circleci.com/gh/2n3g5c9/airbnbot-js/tree/master">
-    <img src="https://circleci.com/gh/2n3g5c9/airbnbot-js.svg?style=svg" alt="Build Status" />
+  <a href="https://circleci.com/gh/2n3g5c9/airbnbot/tree/master">
+    <img src="https://circleci.com/gh/2n3g5c9/airbnbot.svg?style=svg" alt="Build Status" />
   </a>
   <!-- Maintainability Status -->
-  <a href="https://codeclimate.com/github/2n3g5c9/airbnbot-js/maintainability">
+  <a href="https://codeclimate.com/github/2n3g5c9/airbnbot/maintainability">
     <img src="https://api.codeclimate.com/v1/badges/71be31ee9871a217f2f5/maintainability" alt="Maintainability Status" />
   </a>	
   <!-- Test Coverage Status -->
-  <a href="https://codeclimate.com/github/2n3g5c9/airbnbot-js/test_coverage">
+  <a href="https://codeclimate.com/github/2n3g5c9/airbnbot/test_coverage">
     <img src="https://api.codeclimate.com/v1/badges/71be31ee9871a217f2f5/test_coverage" alt="Maintainability Status" />
   </a>	
   <!-- Dependency Status -->
-  <a href="https://depfu.com/github/2n3g5c9/airbnbot-js?project_id=6320">
+  <a href="https://depfu.com/github/2n3g5c9/airbnbot?project_id=6320">
     <img src="https://badges.depfu.com/badges/912fd5dddb23353385862ae6e5e1a888/overview.svg" alt="Test Coverage Status" />
   </a>
   <!-- FOSSA Status -->
-  <a href="https://app.fossa.io/projects/git%2Bgithub.com%2F2n3g5c9%2Fairbnbot-js?ref=badge_shield">
-    <img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2F2n3g5c9%2Fairbnbot-js.svg?type=shield" alt="FOSSA Status" />
+  <a href="https://app.fossa.io/projects/git%2Bgithub.com%2F2n3g5c9%2Fairbnbot?ref=badge_shield">
+    <img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2F2n3g5c9%2Fairbnbot.svg?type=shield" alt="FOSSA Status" />
   </a>
 </div>
 
@@ -44,7 +44,7 @@ The simplest way to enjoy this NodeJS application is to run it in a Docker conta
 Clone the repository:
 
 ```bash
-git clone https://github.com/2n3g5c9/airbnbot-js
+git clone https://github.com/2n3g5c9/airbnbot
 ```
 
 Write a `.env` file with the following environment variables:
@@ -69,12 +69,12 @@ Simply send `/london help` to your Slack bot to get instructions on how to use t
 
 *Following is an example on how to use Airbnbot:*
 <div align="center">
-  <img width="650" src="https://raw.githubusercontent.com/2n3g5c9/airbnbot-js/master/img/airbnbot_screenshot.png" alt="airbnbot-screenshot">
+  <img width="650" src="https://raw.githubusercontent.com/2n3g5c9/airbnbot/master/img/airbnbot_screenshot.png" alt="airbnbot-screenshot">
 </div>
 
 ## Tech/frameworks used
 
-- [NodeJS](https://nodejs.org/): JavaScript runtime built on Chrome's V8 JavaScript engine.
+- [Node.js](https://nodejs.org/): JavaScript runtime built on Chrome's V8 JavaScript engine.
 - [Typescript](https://www.typescriptlang.org/): Typed superset of JavaScript that compiles to plain JavaScript.
 - [Express](https://expressjs.com/): Fast, unopinionated, minimalist web framework for Node.js.
 - [Webpack](https://webpack.js.org/): Bundler for javascript and friends.
