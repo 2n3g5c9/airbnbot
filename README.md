@@ -2,11 +2,13 @@
   <img width="512" src="https://raw.githubusercontent.com/2n3g5c9/airbnbot/master/img/airbnbot_banner.png" alt="airbnbot">
 </div>
 
-<br />
-
-<div align="center">Slack app to fetch deals from the hidden Airbnb API</div>
-
-<br />
+<p align="center">
+    <a href="#-getting-started">Getting Started</a>
+    &nbsp; • &nbsp;
+    <a href="#-techframeworks-used">Tech/frameworks used</a>
+    &nbsp; • &nbsp;
+    <a href="#-license">License</a>
+</p>
 
 <div align="center">
   <!-- Build Status -->
@@ -31,7 +33,7 @@
   </a>
 </div>
 
-## Getting Started
+## 🏁 Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
@@ -72,7 +74,7 @@ Simply send `/london help` to your Slack bot to get instructions on how to use t
   <img width="650" src="https://raw.githubusercontent.com/2n3g5c9/airbnbot/master/img/airbnbot_screenshot.png" alt="airbnbot-screenshot">
 </div>
 
-## Tech/frameworks used
+## 🪄 Tech/frameworks used
 
 - [Node.js](https://nodejs.org/): JavaScript runtime built on Chrome's V8 JavaScript engine.
 - [Typescript](https://www.typescriptlang.org/): Typed superset of JavaScript that compiles to plain JavaScript.
@@ -80,6 +82,6 @@ Simply send `/london help` to your Slack bot to get instructions on how to use t
 - [Webpack](https://webpack.js.org/): Bundler for javascript and friends.
 - [Distroless](https://github.com/GoogleContainerTools/distroless): Language focused docker images, minus the operating system.
 
-## License
+## 📃 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
