@@ -3,7 +3,7 @@
 </div>
 
 <p align="center">
-    <a href="#-getting-started">Getting Started</a>
+    <a href="#-getting-started">Getting started</a>
     &nbsp; • &nbsp;
     <a href="#-techframeworks-used">Tech/frameworks used</a>
     &nbsp; • &nbsp;
@@ -33,7 +33,7 @@
   </a>
 </div>
 
-## 🏁 Getting Started
+## 🏁 Getting started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
