@@ -19,8 +19,8 @@ test('generation of an error message', () => {
     pretext: string;
     text: string;
     footer: string;
-    footer_icon: string | undefined;
-    ts: number;
+    footer_icon?: string | undefined;
+    ts?: number;
   } = messages.errorAttachment('Some test error message.').attachments[0];
   delete message.footer_icon;
   delete message.ts;
@@ -38,8 +38,8 @@ test('generation of a waiting message', () => {
     pretext: string;
     text: string;
     footer: string;
-    footer_icon: string | undefined;
-    ts: number;
+    footer_icon?: string | undefined;
+    ts?: number;
   } = messages.waitingAttachment('Some test waiting message.').attachments[0];
   delete message.footer_icon;
   delete message.ts;
