@@ -1,4 +1,4 @@
-FROM node:13-alpine AS build-env
+FROM node:13.14.0-alpine AS build-env
 ADD . /app
 WORKDIR /app
 RUN yarn install && yarn build
