@@ -17,7 +17,7 @@
     "@types/jest": "^28.1.8",
     "@types/morgan": "^1.9.3",
     "@types/request": "^2.48.8",
-    "@typescript-eslint/parser": "^5.41.0",
+    "@typescript-eslint/parser": "^5.42.0",
     "eslint": "^8.26.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
